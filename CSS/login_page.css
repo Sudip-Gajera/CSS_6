@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.main{
+    width: 1000px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    margin: 50px auto;
+}
+.page{
+    width: 50%;
+    /* border: 1px solid red; */
+    min-height: 500px;
+    float: left;
+}
+.page form{
+    text-align: center;
+    padding: 25px 40px;
+}
+.page form h1{
+    margin-bottom: 25px;
+    color: red;
+    font-weight: 400;
+}
+.para{
+    opacity: 0.5;
+    font-family: cursive;
+}
+.body{
+    width: 25%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: 15px auto;
+}
+.logo1, .logo2{
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 50%;
+    float: left;
+}
+.logo1 i{
+    padding-top: 9px;
+    font-size: 20px;
+    color: red;
+}
+.logo2{
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 50%;
+    float: right;
+}
+.logo2 i{
+    padding-top: 9px;
+    font-size: 20px;
+    color: red;
+}
+.logo1 i:hover, .logo2 i:hover{
+    background-color: red;
+    color: white;
+}
+.email{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(237, 230, 230);
+}
+.password{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(237, 230, 230);
+}
+.para3{
+    color: red;
+    font-weight: 600;
+}
+button{
+    border: 1px solid red;
+    border-radius: 25px;
+    margin: 25px auto;
+    padding: 10px 25px;
+}
+button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}   
+
+
+
+
+/* logo css */
+.logo{
+    width: 50%;
+    min-height: 500px;
+    float: right;
+    background-image: url(../photo/banner.webp);
+    background-size: cover;
+    background-position: center right;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
