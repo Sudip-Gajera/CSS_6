@@ -1,0 +1,41 @@
+body{
+    background-image: url(../photo/BG_img_1.jpg);
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px 25px;
+}
+.box1{
+    background-image: url(../photo/BG_img_2.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+.box2{
+    background-image: url(../photo/BG_img_3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.content{
+    color: white;
+    clear: both;
+}
+.box3{
+    clear: both;
+    width: 60%;
+    margin: auto;
+    height: 50vh;
+    background-image: url(../photo/BG_img_4.jpg);
+    background-size: cover;
+    background-position: center top -300px;
+    overflow: auto;
+    background-attachment: local;
+}
