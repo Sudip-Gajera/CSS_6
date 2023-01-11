@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -17,12 +17,12 @@ body{
     min-height: 500px;
     background-color: white;
     border-radius: 20px;
-    /* border: 1px solid black; */
     margin: 50px auto;
+    overflow: hidden;
+    position: relative;
 }
 .page{
     width: 50%;
-    /* border: 1px solid red; */
     min-height: 500px;
     float: left;
 }
@@ -38,53 +38,45 @@ body{
 .para{
     opacity: 0.5;
     font-family: cursive;
+    font-family: 'Josefin Sans', sans-serif;
 }
-.body{
-    width: 25%;
-    height: auto;
-    /* border: 1px solid black; */
+.icon{
     margin: 15px auto;
 }
-.logo1, .logo2{
-    width: 40px;
-    height: 40px;
-    border: 2px solid red;
-    border-radius: 50%;
-    float: left;
+.fb{
+    margin-right: 30px;
 }
-.logo1 i{
-    padding-top: 9px;
-    font-size: 20px;
+.icon a{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
     color: red;
-}
-.logo2{
-    width: 40px;
-    height: 40px;
-    border: 2px solid red;
+    border: 1px solid red;
     border-radius: 50%;
-    float: right;
+    padding: 11px;
+    font-size: 25px;
+    
 }
-.logo2 i{
-    padding-top: 9px;
-    font-size: 20px;
-    color: red;
-}
-.logo1 i:hover, .logo2 i:hover{
-    background-color: red;
+.icon a:hover{
     color: white;
+    background-color: red;
 }
 .email{
-    font-size: 20px;
+    width: 70%;
     padding: 10px;
     margin-top: 20px;
     background-color: rgb(237, 230, 230);
+    border: none;
+    outline: none;
 }
 .password{
-    font-size: 20px;
+    width: 70%;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgb(237, 230, 230);
+    border: none;
+    outline: none;
 }
 .para3{
     color: red;
@@ -95,10 +87,13 @@ button{
     border-radius: 25px;
     margin: 25px auto;
     padding: 10px 25px;
-}
-button:hover{
     background-color: red;
     color: white;
+    font-size: 20px;
+}
+button:hover{
+    background-color: white;
+    color: red;
     cursor: pointer;
 }   
 
@@ -107,13 +102,14 @@ button:hover{
 
 /* logo css */
 .logo{
-    width: 50%;
-    min-height: 500px;
+    width: 600px;
+    height: 600px;
     float: right;
     background-image: url(../photo/banner.webp);
     background-size: cover;
     background-position: center right;
-    /* border-radius: 50%; */
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
 }

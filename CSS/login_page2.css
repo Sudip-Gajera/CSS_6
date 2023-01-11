@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{background-color: antiquewhite;}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.part1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 40px;
+}
+
+.head {
+    text-align: center;
+    padding: 15px 0px;
+    color: maroon;
+    font-size: 18px;
+}
+
+.account {
+    text-align: center;
+    margin-top: 25px;
+    color: dimgray;
+}
+
+.social_icon {
+    margin: 15px auto;
+}
+
+.social_icon a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid maroon;
+    color: maroon;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    padding: 11px;
+}
+.social_icon a:hover{
+    color: white;
+    background-color: maroon;
+    transition: 0.4s;
+}
+.form{
+    text-align: center;
+}
+.email_pass{
+    width: 70%;
+    padding: 18px;
+    margin-top: 25px;
+    font-size: 15px;
+    background-color: rgb(237, 230, 230);
+    border: none;
+    outline: none;
+}
+.forgot_pass{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 17px;
+    color: maroon;
+}
+button{
+    border: 1px solid maroon;
+    border-radius: 25px;
+    margin: 25px auto;
+    padding: 10px 25px;
+    background-color: maroon;
+    color: white;
+    font-size: 20px;
+}
+button:hover{
+    background-color: white;
+    color: maroon;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.part2{
+    width: 700px;
+    height: 700px;
+    float: right;
+    background-image: url(../photo/banner.webp);
+    background-size: cover;
+    background-position: center right;
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+}
