@@ -1,11 +1,25 @@
-* {
+@font-face {
+    font-family: cavir_dream;
+    src: url(../font/Caviar_Dream/Caviar_Dreams_Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: cavir_dream;
+    src: url(../font/Caviar_Dream/CaviarDreams.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
 }
-body{background-color: antiquewhite;}
-
+body{
+    background-color: antiquewhite;
+    font-family: cavir_dream;
+    font-weight: normal;
+}
 .container {
     width: 1000px;
     height: 600px;
@@ -14,32 +28,30 @@ body{background-color: antiquewhite;}
     position: relative;
     overflow: hidden;
     background-color: white;
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.5);
 }
-
 .part1 {
     width: 50%;
     height: 100%;
     float: left;
     padding: 40px;
-}
-
-.head {
     text-align: center;
-    padding: 15px 0px;
+}
+.part1 h1{ 
+    padding: 10px 0px;
     color: maroon;
-    font-size: 18px;
+    font-size: 40px;
 }
-
-.account {
-    text-align: center;
-    margin-top: 25px;
+.social_icon p {
+    margin: 15px 0px;
     color: dimgray;
 }
-
 .social_icon {
     margin: 15px auto;
 }
-
+.fb{
+    margin-right: 40px;
+}
 .social_icon a {
     height: 50px;
     width: 50px;
@@ -48,40 +60,44 @@ body{background-color: antiquewhite;}
     color: maroon;
     display: inline-block;
     font-size: 25px;
-    text-align: center;
-    padding: 11px;
+    padding: 9px;
 }
 .social_icon a:hover{
     color: white;
     background-color: maroon;
     transition: 0.4s;
 }
-.form{
-    text-align: center;
+.social_icon .or_use{
+    margin-top: 30px;
 }
 .email_pass{
-    width: 70%;
-    padding: 18px;
-    margin-top: 25px;
-    font-size: 15px;
+    width: 67%;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 16px;
     background-color: rgb(237, 230, 230);
     border: none;
     outline: none;
+    margin-bottom: 13px;
 }
 .forgot_pass{
-    text-align: center;
-    margin-top: 25px;
-    font-size: 17px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
     color: maroon;
+}
+.button-div{
+    margin: 30px auto;
 }
 button{
     border: 1px solid maroon;
     border-radius: 25px;
-    margin: 25px auto;
+    margin: 10px auto;
     padding: 10px 25px;
     background-color: maroon;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    width: 121px;
 }
 button:hover{
     background-color: white;

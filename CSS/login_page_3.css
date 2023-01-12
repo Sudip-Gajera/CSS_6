@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+.left_part{
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../photo/prof_img.jpg);
+    background-size: cover;
+    background-position: center right;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+.right_part{
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../photo/vector_img.jpg);
+    background-size: cover;
+    background-position: center right;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+.form-div{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    position: absolute;
+    top: 20vh;
+    left: 39vw;
+}
+.form-div h1{
+    text-align: center;
+    /* background-color: aqua; */
+}
+.form-div p{
+    /* background-color: aqua; */
+    padding: 15px 0px;
+    font-size: 18px;
+}
+.email_pass{
+    width: 279px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(237, 230, 230);
+    border: none;
+    outline: none;
+}
+.button-div, .checkbox-div{
+    text-align: center;
+    margin: 20px 0px;
+    width: 100%;
+}
+button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px 25px;
+    background-color: maroon;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+.checkbox{
+    margin: 10px;
+}
+.forgot-pass{
+    color: maroon;
+    text-decoration: underline;
+}
+button:hover{
+    background-color: white;
+    color: maroon;
+    transition: 0.3s;
+}
