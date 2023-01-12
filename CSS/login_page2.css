@@ -70,34 +70,34 @@ body{
 .social_icon .or_use{
     margin-top: 30px;
 }
-.email_pass{
-    width: 67%;
+form {
+    text-align: center;
+}
+form input{
+    width: 66%;
     padding: 15px;
-    margin-top: 5px;
+    margin: 20px auto;
     font-size: 16px;
     background-color: rgb(237, 230, 230);
     border: none;
     outline: none;
-    margin-bottom: 13px;
+    display: block;
 }
-.forgot_pass{
+form a{
     margin-top: 8px;
     font-size: 16px;
     font-weight: bold;
     color: maroon;
-}
-.button-div{
-    margin: 30px auto;
+    display: block;
+    text-decoration: none;
 }
 button{
-    border: 1px solid maroon;
     border-radius: 25px;
-    margin: 10px auto;
+    margin: 40px auto;
     padding: 10px 25px;
     background-color: maroon;
     color: white;
     font-size: 18px;
-    width: 121px;
 }
 button:hover{
     background-color: white;
