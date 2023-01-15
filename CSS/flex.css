@@ -1,0 +1,57 @@
+.main{
+    width: 100%;
+    height: 500px;
+    background-color: antiquewhite;
+    display: flex;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.nowrap{
+    flex-wrap:nowrap;
+}
+.wrapres{
+    flex-wrap: wrap-reverse;
+}
+
+
+
+
+.center{
+    justify-content: center;
+}
+.spacebtn{
+    justify-content: space-between;
+}
+.spacraround{
+    justify-content: space-around;
+}
+.sevenly{
+    justify-content: space-evenly;
+}
+
+.aline{
+    align-items: center;
+    /* align-items: flex-end;    */
+    /* align-items: flex-start;    default */
+}
+
+.alinecont{
+    align-content: center;
+}
+
+.alinespacbtn{
+    align-content: space-evenly;
+}
