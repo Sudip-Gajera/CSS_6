@@ -3,18 +3,20 @@
     height: 500px;
     background-color: antiquewhite;
     display: flex;
+    row-gap: 50px;
+    column-gap: 10px;
 }
 .box1{
     width: 100px;
     height: 100px;
     background-color: aqua;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .box2{
     width: 200px;
     height: 200px;
     background-color: blueviolet;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .wrap{
     flex-wrap: wrap;
@@ -54,4 +56,7 @@
 
 .alinespacbtn{
     align-content: space-evenly;
+}
+.fdirection{
+    flex-direction: column;
 }

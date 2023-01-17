@@ -1,0 +1,39 @@
+body{
+    font-family: sans-serif;
+    /* background-color: antiquewhite; */
+}
+.main{
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 100px auto;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-weight: normal;
+}
+p{
+    font-size: 20px;
+}
+.services-container{
+    display: flex;
+    justify-content: space-between;
+}
+.services-box{
+    width: 31%;
+    /* border: 1px solid black; */
+}
+.services-img{
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .services-container{
+        flex-direction: column;
+    }
+    .services-box{
+        width: 100%;
+    }
+}
