@@ -1,0 +1,103 @@
+.box{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+    margin: 0 auto;
+    /* rotate-x to fix perspective: 1000px; */
+    perspective: 1000px;
+}
+/* .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+    
+}
+.scale:hover img{
+    transform: scale(1.5, 1.2);
+}
+.translate img:hover{
+    transform: translate(10px,20px);
+}
+.rotate img:hover{
+    transform: rotatex(50deg);
+}
+.skew img:hover{
+    transform: skew(180deg, 180deg);
+} */
+/* .container{
+    overflow: hidden;
+} */
+/* .main{
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    transition: 0.3s; 
+    
+}
+.main:hover img{
+    transform: scale(2.3);
+}
+
+.inr-data{
+    position: absolute;
+    inset: 0;
+}
+.main:hover .inr-data{
+    background-color: rgba(0, 0, 0,0.5);
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 12px 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+.main:hover button{
+    opacity: 1;
+}
+button:hover{
+    background-color: #ffffff26;
+} */
+
+/* CSS */
+.btn {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 13px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+  .btn::before {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+}
+  .btn:hover::before {
+    top: 0px;
+    left: 0px;
+}

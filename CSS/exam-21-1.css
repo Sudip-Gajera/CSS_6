@@ -6,11 +6,12 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0px 16px;
 }
 .upper-section{
     margin-bottom: 64px;
     display: flex;
+    position: relative;
 }
 .heading{
     width: 50%;
@@ -19,9 +20,19 @@ body{
     font-size: 35px;
     font-weight: 500;
 }
+.heading h2::after{
+    content: "";
+    left: 0;
+    right: auto;
+    width: 50px;
+    position: absolute;
+    bottom: 190px;
+    border-bottom: 2px solid #2777c6;
+    margin: 0 auto;
+}
 .heading p{
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 32px;
 }
 .logo{
     width: 50%;
@@ -38,12 +49,15 @@ body{
     column-gap: 20px;
 }
 .box-1{
-    width: 33.33%;
+    width: 343px;
+    height: 190px;
     padding: 16px;
     border-radius: 4px;
-    box-shadow: 0 0 4px 4px rgb(20 102 143 / 8%);
-    border: 1px solid #eee;
     
+    border: 1px solid #eee;
+}
+.box-1:hover{
+    box-shadow: 0 0 4px 4px rgb(20 102 143 / 8%);
 }
 .img-1 img{
     width: 48px;
@@ -51,6 +65,8 @@ body{
 .box-1 p{
     color: #707070;
     line-height: 1.44;
+    margin-top: 15px;
+    margin-bottom: -7px;
 }
 .img-1 + p{
     font-size: 20px;

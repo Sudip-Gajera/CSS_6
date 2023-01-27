@@ -1,0 +1,82 @@
+.box{
+    width: 1300px;
+    height: 700px;
+    margin-bottom: 20px;
+}
+.box-1{
+    background: linear-gradient(to right ,red,blue);
+}
+.box-2{
+    background: linear-gradient(45deg,red,green);
+}
+.box-3{
+    background: radial-gradient( red,green);
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    position: relative;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    width: 0%;
+    height: 0%;
+    transition: all 1s;
+    z-index: -1;
+}
+.btn:hover::before{
+    width: 101%;
+    height: 102%;
+    z-index: 1;
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 0%;
+    height: 0%;
+    transition: all 1s;
+    z-index: -1;
+}
+.btn:hover::after{
+    width: 101%;
+    height: 102%;
+    z-index: 1;
+}
+
+.btn1{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    position: relative;
+}
+.btn1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    transition: all 1s;
+}
+.btn1:hover::before{
+    background-color:rgba(255, 255,0, 0.5);
+    width: 100%;
+}
