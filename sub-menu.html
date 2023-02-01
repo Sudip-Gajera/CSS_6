@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/sub-menu.css">
+</head>
+
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <i class="fa-solid fa-bars" onclick="togalmenu()"></i>
+            <ul id="menu">
+                <i class="fa-solid fa-xmark" onclick="togalmenu()"></i>
+                <li class="acitve"><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Product <i class="fa-solid fa-greater-than"></i></a>
+                    <ul>
+                        <li><a href="#">AC</a></li>
+                        <li>
+                            <a href="#">TV <i class="fa-solid fa-greater-than"></i></a>
+                            <ul>
+                                <li><a href="#">Smart</a></li>
+                                <li>
+                                    <a href="#">Android <i class="fa-solid fa-greater-than"></i></a>
+                                    <ul>
+                                        <li><a href="#">Surat</a></li>
+                                        <li><a href="#">Baroda</a></li>
+                                        <li><a href="#">Vapi</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Frige</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services <i class="fa-solid fa-greater-than"></i></a>
+                    <ul>
+                        <li><a href="#">Free</a></li>
+                        <li><a href="#">Paid</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact US <i class="fa-solid fa-greater-than"></i></a>
+                    <ul>
+                        <li><a href="#">Surat</a></li>
+                        <li><a href="#">Baroda</a></li>
+                        <li><a href="#">Vapi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function togalmenu(){
+            document.getElementById("menu").classList.toggle("sliderbar")
+        }
+    </script>
+</body>
+
+</html>

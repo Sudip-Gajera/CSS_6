@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header{
-    width: 100%;
+    width: 90%;
     /* height: 200px; */
     margin: auto;
     display: flex;
@@ -20,17 +21,50 @@ header{
 nav{
     margin-left: auto;
 }
+
 nav ul li{
     display: inline-block;
     list-style-type: none; 
     position: relative;
+    background-color: #565;
+    
 }
 nav ul li a{
     text-decoration: none;
     color: black;
     margin-right: 50px;
+    /* padding: 20px; */
     font-size: 18px;
+    
 }
+nav ul li ul{
+    position: absolute;
+    top: 20px;
+    display: none;
+    width: 150px;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul li ul li ul{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    display: none;
+}
+nav ul li ul li{
+    width: 100%;
+    display: block;
+}
+nav ul li ul li a{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
 button{
     width: 120px;
     height: 40px;
@@ -46,10 +80,11 @@ button{
     color: red;
 }
 ul li a:hover{
+    background-color: #fff;
     color: red;
     border-bottom: 2px solid red;
 }
-ul li::before{
+/* ul li::before{
     content: '';
     width: 20px;
     height: 20px;
@@ -72,7 +107,7 @@ ul li:nth-child(4)::before{
 }
 ul li:last-child::before{
     background-image: url(../photo/contact-us-icon.png);
-}
+} */
 button:hover{
     background-color: white;
     color: black;

@@ -26,10 +26,8 @@
 .skew img:hover{
     transform: skew(180deg, 180deg);
 } */
-/* .container{
-    overflow: hidden;
-} */
-/* .main{
+
+.main{
     width: 400px;
     height: 400px;
     margin: 100px auto;
@@ -46,7 +44,7 @@
     
 }
 .main:hover img{
-    transform: scale(2.3);
+    transform: scale(1.3);
 }
 
 .inr-data{
@@ -74,7 +72,7 @@ button{
 }
 button:hover{
     background-color: #ffffff26;
-} */
+}
 
 /* CSS */
 .btn {
