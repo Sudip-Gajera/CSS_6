@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam-4-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/exam-4-2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <i class="fa-solid fa-bars" onclick="togalmenu()"></i>
+            <ul id="menu-1">
+                <li><a href="#">home</a></li>
+                <li>
+                    <a href="#">product <i class="fa-solid fa-angle-right"></i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">ac <i class="fa-solid fa-angle-right"></i></a>
+                            <ul class="sub-menu-2">
+                                <li><a href="#">ac-1</a></li>
+                                <li><a href="#">tv-2</a></li>
+                                <li><a href="#">wm-3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">tv <i class="fa-solid fa-angle-right"></i></a>
+                            <ul class="sub-menu-2">
+                                <li><a href="#">ac</a></li>
+                                <li><a href="#">tv</a></li>
+                                <li><a href="#">wm</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        function togalmenu(){
+            document.getElementById("menu-1").classList.toggle("sliderbar");
+        }
+    </script>
+</body>
+</html>
