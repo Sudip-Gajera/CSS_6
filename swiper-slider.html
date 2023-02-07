@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./CSS/swiper-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper main-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./photo/BG_img_1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_3.jpg" alt=""></div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="prev"><i class="fa-solid fa-backward-fast"></i></div>
+        <div class="next"><i class="fa-solid fa-forward-fast"></i></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <!-- ==================  2 nd slider  ====================== -->
+
+    <div class="swiper mySwiper-1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./photo/BG_img_1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./photo/BG_img_2.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="prev"><i class="fa-solid fa-backward-fast"></i></div>
+        <div class="next"><i class="fa-solid fa-forward-fast"></i></div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.main-slider', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <script>
+        var swiper1 = new Swiper(".mySwiper-1", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+            breakpoints: {
+                "480": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "600": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "1200": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "1500": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
