@@ -1,0 +1,159 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: slider 3s linear  infinite alternate;
+}
+
+@keyframes slider {
+    from{
+        transform: translateX(0px) rotate(0deg) scale(0.3);
+        /* border-radius: 5px; */
+    }
+    to{
+        transform: translateX(1000px) rotate(360deg) scale(1);
+        /* border-radius: 50%; */
+    }
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: aqua;
+    margin: 50px auto;
+    position: relative;
+}
+
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+    animation: up-down 1.5s ease-in infinite alternate;
+}
+.bar{
+    width: 600px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 350px;
+}
+
+@keyframes up-down {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(300px);
+    }
+}
+
+
+.tune{
+    width: 200px;
+    height: 200px;
+    margin: 300px auto;
+}
+span{
+    display: inline-block;
+    width: 5px;
+    height: 100px;
+    background-color: red;
+    animation: tuner 1s ease-in-out infinite alternate;
+    transform-origin: center bottom;
+}
+
+.tune :nth-child(2){
+    background-color: rgb(43, 43, 72);
+    animation-delay: 0.2s;
+}
+
+.tune :nth-child(3){
+    background-color: rgb(88, 198, 20);
+    animation-delay: 0.4s;
+}
+
+.tune :nth-child(4){
+    background-color: rgb(175, 15, 79);
+    animation-delay: 0.6s;
+}
+
+.tune :nth-child(5){
+    background-color: rgb(215, 236, 18);
+    animation-delay: 0.8s;
+}
+
+.tune :nth-child(6){
+    background-color: rgb(16, 239, 213);
+    animation-delay: 1s;
+}
+
+.tune :nth-child(7){
+    background-color: rgb(85, 5, 18);
+    animation-delay: 1.2s;
+}
+
+.tune :last-child{
+    background-color: rgb(36, 27, 165);
+    animation-delay: 1.4s;
+}
+
+@keyframes tuner {
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+
+
+.box-1{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+.b-1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    animation: b11 2s linear infinite alternate;
+}
+.b-2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    float: right;
+    display: inline-block;
+    animation: b12 2s linear infinite alternate;
+}
+
+
+@keyframes b11 {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes b12 {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-100px);
+    }
+}
+
+.box-2{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
